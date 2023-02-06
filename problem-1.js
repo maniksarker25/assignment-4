@@ -14,10 +14,10 @@
 
 function mindGame(number){
     if(typeof number !== 'number'){
-        return 'Enter a valid number please'
+        return 'Please enter a valid number'
     }
     const result = ((((number * 3) + 10) / 2) - 5);
     return result;
 }
-const myResult = mindGame(33);
+const myResult = mindGame('33');
 console.log(myResult);

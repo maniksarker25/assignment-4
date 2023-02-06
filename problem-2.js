@@ -1,6 +1,6 @@
 function evenOdd(string){
     if(typeof string !== 'string'){
-        return 'Enter a valid string please'
+        return 'Please enter a valid string '
     }
     if(string.length % 2 == 0){
         return 'even';
@@ -10,5 +10,5 @@ function evenOdd(string){
         return 'odd';
     }
 }
-const evenOrOdd = evenOdd('Batch7');
+const evenOrOdd = evenOdd(25);
 console.log(evenOrOdd);

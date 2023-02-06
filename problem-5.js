@@ -1,6 +1,6 @@
 function gemsToDiamond(firstFriendGemsQuantity,secondFriendGemsQuantity,thirdFriendGemsQuantity){
     if(typeof firstFriendGemsQuantity !== 'number' || typeof secondFriendGemsQuantity !== 'number' || typeof thirdFriendGemsQuantity !== 'number' ){
-        return 'Enter valid number please:';
+        return 'Please enter valid number';
     }
     const firstFriendDiamond = firstFriendGemsQuantity * 21;
     const secondFriendDiamond = secondFriendGemsQuantity * 32;
@@ -15,5 +15,5 @@ function gemsToDiamond(firstFriendGemsQuantity,secondFriendGemsQuantity,thirdFri
     }
 
 }
-const result = gemsToDiamond(20,200,50);
+const result = gemsToDiamond(20,200,'50');
 console.log(result);
