@@ -1,5 +1,7 @@
 function findingBadData(age){
-    
+    if(Array.isArray(age) == false){
+        return 'Please enter a valid array '
+    }
     let count = 0;
     for(let i = 0; i < age.length; i++){
         const element = age[i];
@@ -11,5 +13,5 @@ function findingBadData(age){
     return count;
     
 }
-const result = findingBadData([2,-5,-7,-13]);
+const result = findingBadData(54);
 console.log(result);
